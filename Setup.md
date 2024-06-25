@@ -1,26 +1,22 @@
 ## How to setup this project Express Typescript Project
 
 1.
-
 ```
  npm init -y
 ```
 
 2.
-
 ```
 npm i -D typescript
 npm i concurrently
 ```
 
 3.
-
 ```
  tsc --init
 ```
 
 4.
-
 ```
  Add following scripts in package.json
 
@@ -34,6 +30,7 @@ npm i concurrently
   },
 ```
 
+5.
 ```
-5. npm run dev
+ npm run dev
 ```
