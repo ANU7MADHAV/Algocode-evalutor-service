@@ -5,7 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const pingController_1 = __importDefault(require("../../controllers/pingController"));
+const submissionRoute_1 = __importDefault(require("./submissionRoute"));
 const v1Router = express_1.default.Router();
-v1Router.get("/", () => { });
 v1Router.get("/ping", pingController_1.default);
+v1Router.use("/submission", submissionRoute_1.default);
 exports.default = v1Router;
